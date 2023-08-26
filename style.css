@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+body {
+    line-height: 1.6;
+    background-color: rgb(20, 19, 19);
+}
+nav{
+    background:rgb(255, 0, 0) ;
+    height: 156px;
+    margin-top: -41px;
+    color: #FFF7EF;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    font-size: 36px;
+    font-weight: bold;
+     text-align: center;
+    margin: 40px 0 60px 0;
+    padding: 41px 0;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 139px;
+    margin-bottom: 95px;
+}
+#search-input{
+    width: 60%;
+    max-width: 582px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333; 
+    transition: box-shadow 0.2s ease-in-out;
+}
+#search-input:hover{
+    width: 60%;
+    max-width: 582px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0,0,0,1.2);
+    border-radius: 5px;
+    color: #696969; 
+}
+#search-button{
+    padding: 10px 20px;
+    transition-property: ease-in-out 1s;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+.desc{
+    color: white;
+    text-align: center;
+}
+#search-button:hover{
+    padding: 10px 20px;
+    background-color: rgb(245, 124, 124);
+    color: white;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.search-results{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.search-result{
+    margin: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+}
+.search-result img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+.search-result:hover img{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.search-result-1{
+    margin: 6px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+}
+.search-result-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+.search-result-1:hover img{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.search-result a{
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    text-transform: capitalize;
+    padding: 10px;
+    color: #333;
+}
+.search-result-1 a{
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    text-transform: capitalize;
+    padding: 10px;
+    color: #333;
+}
+#show-more{
+    background-color: rgb(255, 0, 0);
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+#show-more:hover{
+    background-color: rgb(223, 104, 104);
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+#scroll-up{
+    background-color: rgb(20, 19, 19);
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 58px 1830px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+#scroll-up:hover{
+    background-color: white;
+    font-size: 18px;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 58px 1830px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+@media screen and (max-width: 768px){
+    .search-results{
+        padding: 20px; 
+    }
+    .search-result{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 768px){
+    .search-result-1{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 480px){
+    .search-result{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px){
+    .search-result-1{
+        width: 68%;
+    }
+}
